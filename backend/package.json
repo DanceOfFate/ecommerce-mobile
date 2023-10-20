@@ -1,0 +1,26 @@
+{
+  "name": "real-estate-standalone",
+  "version": "1.0.0",
+  "main": "api/index.ts",
+  "repository": "git@github.com:DanceOfFate/real-estate-standalone.git",
+  "author": "Dawid Derewońko <angeldeabyssi@gmail.com>",
+  "scripts": {
+    "dev": "nodemon --config nodemon.json index.ts",
+    "dev:debug": "nodemon --config nodemon.json --inspect-brk api/index.ts"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@types/bcryptjs": "^2.4.4",
+    "@types/express": "^4.17.18",
+    "@types/jsonwebtoken": "^9.0.3",
+    "@types/node": "^20.8.2",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.4",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
