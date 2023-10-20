@@ -6,9 +6,9 @@ import {SliderBox} from "react-native-image-slider-box"
 
 export const Carousel = () => {
     const slides: any[] = [
-        "https://m.media-amazon.com/images/M/MV5BNDk5YjkxYWYtNjRkMi00YWMwLWE0NjQtZGFiZjEzYTBjZGQ5XkEyXkFqcGdeQXVyMjUyNDk2ODc@._V1_.jpg",
-        "https://media.biletomat.pl/media/galleries/galleries_file/163/5162/98c19a8317044049a559ca80b7a119ae.jpg",
-        "https://global-uploads.webflow.com/62158cc7e1cd8f0ec3729390/63ed1b316aaba66004686e94_epica-JVYeP.jpeg"
+        "https://media.architecturaldigest.com/photos/5f594415423605eb5d414865/16:9/w_2560%2Cc_limit/MB_DEC19-58.jpg",
+        "https://hips.hearstapps.com/hmg-prod/images/index-online-64e648a46cf5e.jpg",
+        "https://coolmaterial.com/wp-content/uploads/2017/05/12-Online-Furniture-Stores-2-1000x600.jpg"
     ]
     return (
         <View style={styles.carouselContainer}>

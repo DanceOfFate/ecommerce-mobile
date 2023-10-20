@@ -12,7 +12,7 @@ export const ProductCardView = () => {
           <View style={styles.container}>
               <View style={styles.imageContainer}>
                   <Image
-                      source={{uri: "https://media.biletomat.pl/media/galleries/galleries_file/163/5162/98c19a8317044049a559ca80b7a119ae.jpg"}}
+                      source={{uri: "https://media.architecturaldigest.com/photos/5f594415423605eb5d414865/16:9/w_2560%2Cc_limit/MB_DEC19-58.jpg"}}
                       style={styles.image}
                   />
               </View>
