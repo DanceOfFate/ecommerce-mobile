@@ -2,6 +2,7 @@ import express, {ErrorRequestHandler, Request, Response} from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import productsRouter from "./routes/products"
+import bodyParser from "body-parser";
 
 const port = 3000;
 
@@ -10,6 +11,7 @@ dotenv.config();
 const app = express();
 
 app.use(express.json());
+app.use(bodyParser.json())
 
 // @ts-ignore
 mongoose.connect(process.env.MONGO_URL)

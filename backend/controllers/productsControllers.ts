@@ -33,24 +33,20 @@ export const getProduct  = async (req: Request, res: Response) => {
 }
 
 export const searchProduct  = async (req: Request, res: Response) => {
-    try{
-        const results = await Product.aggregate(
-            [
-                {
-                    $search: {
-                        index: "ecommerce",
-                        text: {
-                            query: req.params.key,
-                            path: {
-                                wildcard: "*"
-                            }
-                        }
-                    }
-                }
-            ]
+    try {
+        let data = await Product.find(
+            {
+                "$or": [
+                    {name: {$regex: req.params.key}},
+                    {supplier: {$regex: req.params.key}},
+                    {price: {$regex: req.params.key}},
+                    {description: {$regex: req.params.key}},
+                    {product_location: {$regex: req.params.key}},
+                ]
+            }
         )
-        res.status(200).json(results);
-    }catch (error) {
-        res.status(500).json("Failed to search the results.")
+        res.status(200).json(data)
+    } catch (error) {
+        res.json(error);
     }
 }
